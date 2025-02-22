@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BMW</title>
+</head>
+<body>
+    <style>
+        body{
+
+        }
+        img {
+            cursor: pointer;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            border: 1px white;
+            padding: 10px;
+        }
+        .iframe-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .footer {
+            background-color: #007bba;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+    </style>
+    <script>
+        function Iframe(src) {
+            document.getElementById("bmw-iframe").src = "https://www.bmw.com/es/index.html";
+        }
+    </script>
+</head>
+<body>
+<table>
+<header>
+    <h1 style="text-align: center; color: blue;">PROGRAMACION WEB I PRIM 25</h1>
+    <h2 style="text-align: center; color: darkblue;">Evaluación práctica Parcial 1</h2>
+    <h2 style="text-align: center; color: black;">Profesora: M.C. Imelda Deyanira Hernández Martinez</h2>
+    <h2 style="text-align: center; color: black;">Alumno: Luis Alberto Uresti Gaytán</h2>
+</header>
+
+
+ <table style="border: 2px white;">
+    <tr>
+        <td><p style="color: white;">................................</p></td>
+        <td><mark style="background-color: powderblue;">Conoce más sobre BMW</mark></td>
+        <td><img src="img/BMW.png" alt="Página oficial de BMW" width="15%" onclick="Iframe()"></image></td>
+        <div class="iframe-container">
+            <td><iframe id="bmw-iframe" src="" width="70%" height="220px"> </iframe></td>
+        </div>
+        </tr>
+
+        <tr>
+            <td><img src="img/imagen1.jpg" width="50%"></td>
+            <td><img src="img/imagen2.jpg" width="50%"></td>
+            <td><img src="img/imagen3.jpg" width="50%"></td>
+        </tr>
+
+    </table>
+
+<header style="text-align: center;">
+    </header>
+    <div class="footer">
+        Universidad Politécnica de San Luis Potosí
+    </div>
+
+    <address>Urbano Villalon 500. Col. La ladrillera</address>
+
+</body>
+</html>
+</body>
+</html>
