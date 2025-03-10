@@ -1,0 +1,21 @@
+ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	width: 20%;
+}
+li a{
+	background-color: violet;
+	color: white;
+	display: block;	
+	padding: 16px;
+	text-decoration: none;
+}
+li a:hover{
+	background-color: blueviolet;
+	
+}
+li .activo{
+	background-color: darkviolet;
+	color: white;
+}
