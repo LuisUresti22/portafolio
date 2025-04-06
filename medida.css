@@ -1,0 +1,53 @@
+  body{
+    background-color: powderblue;
+  }
+
+   /* Unidades absolutas */
+  .contenedor{
+    font-family: Arial, sans-serif;
+    margin: 1cm; 
+    background-color: #f0f0f0;
+  }
+
+  .titulo1{
+    font-size: 24pt;     
+    margin-top: 1cm;     
+    margin-bottom: 0.5cm;
+    padding: 5mm;       
+    border-bottom: 2px solid #333;
+    width: 15cm;   
+  }
+
+ .parrafo1{
+    font-size: 14pt;    
+    width: 12cm;        
+    padding: 10mm;       
+    border: 1px solid black;
+    margin: 20px;        
+    line-height: 18pt;  
+  }
+
+
+    /* Unidades relativas */
+  .caja {
+    width: 50%;
+    height: 20vh; 
+    background-color: #a2d2ff;
+    padding: 1rem;
+    margin-top: 1in; 
+    border: 0.1in solid #0077b6;
+  }
+
+  .titulo2{
+    font-size: 1.2em;
+    line-height: 150%;
+    margin-bottom: 1em;
+  }
+
+  .parrafo2{
+    font-size: 3rem; 
+    margin-bottom: 2vh; 
+  }
+
+ 
+ 
