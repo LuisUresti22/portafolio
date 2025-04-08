@@ -3,13 +3,6 @@ body {
     text-align: center;
 }
 
-.contenedor-boton {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0; 
-}
-
 .boton {
     padding: 15px;
 }
