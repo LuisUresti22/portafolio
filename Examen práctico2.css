@@ -1,10 +1,12 @@
 body {
     background-color: powderblue;
+    
 }
 
 .contenedor-boton {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 20px 0; 
 }
 
