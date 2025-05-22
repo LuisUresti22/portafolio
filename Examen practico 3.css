@@ -1,0 +1,30 @@
+body{
+	background-color: lightgray;
+}
+
+h1{
+	text-align: center;
+	margin-top: 35px;
+	font-family: arial sans-serif;
+	font-size: 28pt;
+}
+.container{
+	background-color: powderblue;
+	border: solid black 2px;
+	padding:15px;
+	flex: display;
+
+}
+
+#tarea{
+	width: 86%;
+	padding: 12px;
+	margin-top: 8px;
+}
+
+#agregar{
+	width: 10%;
+	padding: 12px;
+	margin-top: 8px;
+	margin-left: 4px;
+}
