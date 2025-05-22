@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Qué tanto sabes de Billie Eilish?</title>
+  <link rel="stylesheet" href="Billie Eilish.css">
+  <script type="text/javascript" src="Billie Eilish.js"></script>
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!-- html2canvas -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <div class="contenedor">
+    <h1>¿Qué tanto sabes de Billie Eilish?</h1>
+    <form id="formulario">
+      <div class="pregunta">
+        <label>1. ¿Cuál es el nombre completo de Billie Eilish?</label><br>
+        <input type="radio" name="p1" value="0"> Billie Eilish Pirate Baird<br>
+        <input type="radio" name="p1" value="1"> Billie Eilish Pirate Baird O'Connell<br>
+        <input type="radio" name="p1" value="0"> Billie Eilish O'Connell<br>
+      </div>
+      <div class="pregunta">
+        <label>2. ¿Cuál fue su primer sencillo que se volvió viral?</label><br>
+        <input type="radio" name="p2" value="1"> Ocean Eyes<br>
+        <input type="radio" name="p2" value="0"> Bad Guy<br>
+        <input type="radio" name="p2" value="0"> Therefore I Am<br>
+      </div>
+      <div class="pregunta">
+        <label>3. ¿En qué año ganó Billie Eilish los cuatro premios principales en los Grammy?</label><br>
+        <input type="radio" name="p3" value="0"> 2018<br>
+        <input type="radio" name="p3" value="0"> 2019<br>
+        <input type="radio" name="p3" value="1"> 2020<br>
+      </div>
+      <div class="pregunta">
+        <label>4. ¿Cuál es el nombre de su hermano y colaborador musical?</label><br>
+        <input type="radio" name="p4" value="0"> Patrick<br>
+        <input type="radio" name="p4" value="1"> Finneas<br>
+        <input type="radio" name="p4" value="0"> George<br>
+      </div>
+      <div class="pregunta">
+        <label>5. ¿Qué canción compuso para una película de James Bond?</label><br>
+        <input type="radio" name="p5" value="1"> No Time to Die<br>
+        <input type="radio" name="p5" value="0"> Skyfall<br>
+        <input type="radio" name="p5" value="0"> Die Another Day<br>
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <div id="resultado" class="oculto">
+      <h2>Resultados</h2>
+      <p id="calificacion"></p>
+      <canvas id="grafico" width="400" height="200"></canvas>
+      <button id="descargarPDF">Descargar PDF</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
