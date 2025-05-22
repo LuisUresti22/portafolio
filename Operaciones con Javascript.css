@@ -1,0 +1,83 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #e0e5ec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor del formulario */
+form {
+  background: #e0e5ec;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow:  20px 20px 60px #bebebe,
+               -20px -20px 60px #ffffff;
+  width: 320px;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Etiquetas */
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Campos de entrada */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #e0e5ec;
+  box-shadow: inset 5px 5px 10px #bebebe,
+              inset -5px -5px 10px #ffffff;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Botones */
+input[type="button"] {
+  width: 48%;
+  padding: 12px;
+  margin: 1%;
+  border: none;
+  border-radius: 10px;
+  background: #e0e5ec;
+  box-shadow:  5px 5px 10px #bebebe,
+               -5px -5px 10px #ffffff;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse */
+input[type="button"]:hover {
+  box-shadow: inset 5px 5px 10px #bebebe,
+              inset -5px -5px 10px #ffffff;
+}
+
+/* Resultado */
+#r {
+  margin-top: 30px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #e0e5ec;
+  box-shadow: inset 5px 5px 10px #bebebe,
+              inset -5px -5px 10px #ffffff;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
