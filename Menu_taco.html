@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <link rel="stylesheet" href="estilostacoscript-1.css">
+    <script src="TacoScript.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvu0dcTGM8xAqIG3PulxgyBR7i7oOuBN4&loading=async&libraries=places&callback=initMap"></script>
+    <div class="menu-toggle" onclick="toggleMenu()">
+        &#9776;
+    </div>
+</head>
+<body id="inicio">
+    <script>
+window.addEventListener('mouseover', initLandbot, { once: true });
+window.addEventListener('touchstart', initLandbot, { once: true });
+var myLandbot;
+function initLandbot() {
+  if (!myLandbot) {
+    var s = document.createElement('script');
+    s.type = "module"
+    s.async = true;
+    s.addEventListener('load', function() {
+      var myLandbot = new Landbot.Livechat({
+        configUrl: 'https://storage.googleapis.com/landbot.online/v3/H-2930575-0Y7NZEH95D8WBT9V/index.json',
+      });
+    });
+    s.src = 'https://cdn.landbot.io/landbot-3/landbot-3.0.0.mjs';
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+  }
+}
+</script>
+    <header class="header">
+        <div class="perfil">
+            <a href="Inicio de sesion.html"><img src="perfil.png" alt="Perfil">
+            <p>Mi perfil</p> </a>
+        </div>
+        <div class="logo">
+            <a href="#inicio">
+                <img src="Logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="carrito">
+            <button>
+                <a href="Cuestionario.html" target="_blank"><img src="carrito.png" alt="Carrito">Hacer pedido</a>
+            </button>
+        </div>
+    </header>
+
+    <nav class="nav-bar">
+        <a href="Menu_taco.html"><button>MENÚ</button></a>
+        <a href="Promociones.html" target="_blank"><button>PROMOCIONES</button></a>
+        <a href="sobrenosotros.html" target="_blank"><button>SOBRE NOSOTROS</button></a>
+        <a href="Preguntas y respuestas TacoScript.html" target="_blank"><button>BLOG</button></a>
+        <a href="Formulario_Contacto.html" target="_blank"><button>CONTACTANOS</button></a>
+    </nav>
+
+    <!-- Menu de platillos -->
+    <section class="menu" id="menu">
+        <h2> Comida </h2>
+        <div class="menu-productos">
+            <!-- /Este apartado sera para la comida -->
+            <div class="menu-comida">
+                <img src="tacos1.png">
+                <h3> Bistek code</h3>
+                <p> Un taco creado para los verdaderos conocedores. Doraditos por fuera y tiernos por dentro, servidos sobre una tortilla calientita y acompañados del mejor código de sabores </p>
+                <span> $55 MXN</span>
+            </div>
+            <div class="menu-comida">
+                <img src="tacos2.jpg">
+                <h3> Imelda'special</h3>
+                <p>  Un taco diseñado para los verdaderos amantes del buen sabor. Preparado con una combinación perfecta de camarones jugosa, queso derretido, guacamole cremoso</p>
+                <span> $80 MXN</span>
+            </div>
+            <div class="menu-comida">
+                <img src="tacos3.jpg">
+                <h3> Arraychera</h3>
+                <p> Tacos de Arraychera, donde la jugosa arrachera se combina con el inconfundible toque ahumado del asador. </p>
+                <span> $70 MXN</span>
+            </div>
+            <div class="menu-comida">
+                <img src="undefined.jpg">
+                <h3> Taco Undefined</h3>
+                <p> Un taco misterioso, te atreves a probarlo? </p>
+                <span> $55 MXN</span>
+            </div>
+            <div class="menu-comida">
+                <img src="suadero.jfif">
+                <h3> Scope de Suadero</h3>
+                <p>  Un taco diseñado para los amantes del suadero</p>
+                <span> $80 MXN</span>
+            </div>
+            <div class="menu-comida">
+                <img src="quesadillas.jfif">
+                <h3> QuesaSwitch con proteina</h3>
+                <p> Qusedilla con un switch para que elijas tu mejor combinacion de carnes </p>
+                <span> $70 MXN</span>
+            </div>
+        </div>
+        <h2> Bebidas </h2>
+        <div class="menu-productos">
+            <!-- /Este apartado sera para las bebidas -->
+            <div class="menu-comida">
+                <img src="horchata.jpg">
+                <h3> Horchatml</h3>
+                <p> El agua por excelencia del html </p>
+                <span> $50 MXN</span>
+            </div>
+            <div class="menu-comida">
+                <img src="jamaica.jfif">
+                <h3> Agua de Java-maica</h3>
+                <p>  Refrescante agua de jamaica </p>
+                <span> $50 MXN</span>
+            </div>
+            <div class="menu-comida">
+                <img src="limon.jpg">
+                <h3> FizzBuzz Limón</h3>
+                <p> La bebida de limon mas refrescante de programacion </p>
+                <span> $50 MXN</span>
+            </div>
+            <div class="menu-comida">
+                <img src="refrescos.jpg">
+                <h3> SodaScript</h3>
+                <p> Elige tu favorito de la familia coca-cola </p>
+                <span> $50 MXN</span>
+            </div>
+        </div>
+    </section>
+    <br> 
+    
+    
+    <footer>Página web desarrollada para la materia de programacion web 1. Primavera 2025 Universidad politecnica de San Luis Potosí</footer>
+    
+</body>
+<script>
+function toggleMenu() {
+    const nav = document.getElementById("navBar");
+    nav.classList.toggle("open");
+}
+</script>
+</html>
